@@ -19,12 +19,13 @@
                 <section>
                     <ul>
                         <li > 
-                            <a href="file:///C:/Desarrollo/CursoHTML/index.html#linea"> Elementos en linea</a>
+                            <a href="#linea"> Elementos en linea</a>
                         </li>
                         <li> 
-                        
-                            <a href="file:///C:/Desarrollo/CursoHTML/index.html#bloque"> Elementos en bloque</a>
-
+                            <a href="#bloque"> Elementos en bloque</a>
+                        </li>
+                        <li> 
+                            <a href="#metodosHTTP"> Métodos de solicitud HTTP</a> 
                         </li>
                     </ul>
                 </section>
@@ -65,9 +66,150 @@
                             </tbody>
                         </table>
                     </section>
+                    <hr>
+                    <section>
+                        <h2 style="color:#2F1C6A" id="metodosHTTP" >
+                            Métodos de solicitud HTTP
+                        </h2>
+                        <div>
+                            <h1 style="color:#2F1C6A">
+                                ¿Qué es HTTP?
+                            </h1>
+                            <p>
+                                Se desarrolló para permitir la comunicación entre clientes y servidores.
+                            </p>
+                            <p>
+                                Ejemplo: el cliente (navegador) envía una solicitud HTTP al servidor; luego el servidor devuelve una respuesta al cliente. La respuesta incluye información sobre el estado de la solicitud y posiblemente el contenido de la solicitud.
+                            </p>
+                            <ul> Metodos HTTP
+                                <li>GET</li>
+                                <li>POST</li>
+                                <li>PUT</li>
+                                <li>HEAD</li>
+                                <li>DELETE</li>
+                            </ul>
+                            <img style="height: 200px;" src="images/getpost.png" alt="GetPost">
+                            <a href="https://app.utmachala.edu.ec/siutmach/public/"><h1>SIUTMACH</h1></a>
+                        </div>
+                        <div>
+                            <h1 style="color:#2F1C6A">
+                                Método GET
+                            </h1>
+                            <p>
+                                GET se utiliza para solicitar datos de un recurso específico.
+                            </p>
+                            <p>
+                                Algunas notas sobre las solicitudes GET:
+                            </p>
+                            <ul>
+                                <li>Las solicitudes GET se pueden almacenar en caché</li>
+                                <li>Las solicitudes GET permanecen en el historial del navegador</li>
+                                <li>Las solicitudes GET se pueden marcar</li>
+                                <li>Las solicitudes GET nunca deben usarse cuando se trata de datos confidenciales</li>
+                                <li>Las solicitudes GET tienen restricciones de longitud</li>
+                                <li>Las solicitudes GET solo se utilizan para solicitar datos (no modificar)</li>
+                            </ul>
+                            <img style="height: 200px;" src="images/get.png" alt="Get">
+                            <pre>URL: https://app.utmachala.edu.ec/siutmach/public/?nombre=elian&amp;apellido=ramirez&amp;edad=22&amp;genero=hombre</pre>
+                        </div>
+                        <div>
+                            <h1 style="color:#2F1C6A">
+                                Método POST
+                            </h1>
+                            <p>
+                                POST se utiliza para enviar datos a un servidor para crear/actualizar un recurso.
+                            </p>
+                            <p>
+                                Algunas notas sobre las solicitudes POST:
+                            </p>
+                            <ul>
+                                <li>Las solicitudes POST nunca se almacenan en caché</li>
+                                <li>Las solicitudes POST no permanecen en el historial del navegador</li>
+                                <li>Las solicitudes POST no tienen restricciones en la longitud de los datos</li>
+                            </ul>
+                            <img style="height: 230px;" src="images/post.png" alt="Post">
+                            <pre>URL: https://app.utmachala.edu.ec/siutmach/public</pre>
+                        </div>
+                        <div>
+                            <h1 style="color:#2F1C6A">
+                                Diferencias Principales
+                            </h1>
+                            <table border="1" class="default">
+                                <tr>
+                                  <td align="center">En el método GET la información <br> es visible en la URL lo que <br> aumenta las vulnerabilidades y <br> el riesgo de hacking. Por el contrario, <br> el método POST no muestra variables <br> en la URL y también se pueden utilizar <br> múltiples técnicas de codificación, <br> lo que lo hace resistente.</td>
+                                  <td align="center">Los datos del método GET se pueden <br> almacenar en caché, mientras <br> que los datos del método POST no.</td>
+                                  <td align="center">En el motodo POST el navegador advierte <br> de que los datos del formulario se enviarán <br>de nuevo</td>
+                                  <td align="center">POST es un poco más seguro que GET porque <br> los parámetros no se almacenan en el <br> historial del navegador ni en los registros del servidor web.</td>
+                                </tr>
+                              </table>
+                        </div>
+                    </section>
                     <section>
                         <h3> ¿Algo que nos quieras comentar?</h3>
                         <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+                        <div class="content">
+                            <div class="contact-form">
+                                <h3>Inscribete <span> Ahora</span></h3>
+                                <form action="">
+                                  <fieldset>
+                                    <legend>Datos personales</legend>
+                                    <p>
+                                      <label for="apellidos">Apellidos</label>
+                                      <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tú Apellido" />
+                                    </p>
+                                    <p>
+                                      <label for="nombre">Nombres</label>
+                                      <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+                                    </p>
+                                    <p>
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" id="email" placeholder="example@gmail.com" />
+                                      </p>
+                                    <p>
+                                      <label for="edad">Edad</label>
+                                      <input type="number" max="200" min="18" name="edad" id="edad" />
+                                    </p>
+                                    <p>
+                                      <label for="curso">Curso a inscribirse</label>
+                                      <select name="curso" id="curso">
+                                        <optgroup label="Diseño Front END">
+                                          <option value="HTML">HTML</option>
+                                          <option value="CSS">CSS</option>
+                                          <option value="Diseño UX">Diseño UX</option>
+                                        </optgroup>
+                                        <optgroup label="Back END">
+                                          <option value="JavaScript">JavaScript</option>
+                                          <option value="PHP">PHP</option>
+                                          <option value="PYTHON">PYTHON</option>
+                                        </optgroup>
+                                        <optgroup label="Base de Datos">
+                                            <option value="MongoDB">MongoDB</option>
+                                            <option value="SQL Server">SQL Server</option>
+                                            <option value="Mysql">Mysql</option>
+                                          </optgroup>
+                                      </select>
+                                    </p>
+                                    <p class="block">
+                                      <label for="direccion">Dirección</label>
+                                      <textarea name="direccion" id="direccion" rows="3" placeholder="Dejanos tú Dirección.."></textarea>
+                                    </p>
+                                    <p>
+                                        <label for="seccions">Seccion</label>
+                                        <input list="seccions" name="seccion" id="seccion" />
+                                        <datalist id="seccions">
+                                          <option value="Vespertina"></option>
+                                          <option value="Matutina"></option>
+                                          <option value="Diurna"></option>
+                                        </datalist>
+                                      </p>
+                                  </fieldset>
+                                  <br />
+                                  <p class="button">
+                                    <button type="submit">Enviar</button>
+                                  </p>
+                                </form>
+                              </div>
+                        </div>
                     </section>
                     
                     <aside>
@@ -95,5 +237,4 @@
         </div>
     </div>
 </body>
-<!-- Comenatrio XD -->
 </html>
