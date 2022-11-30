@@ -11,7 +11,7 @@
 </head>
 <body style="background-color:#E9ECF4;">
    
-    <h2 style="color:#2F1C6A;" align="center">HOLAAAAAAAAAAAAAAA Explicación de los fundamentos del Lenguaje de marcado de hipertexto </h2>
+    <h2 style="color:#2F1C6A;" align="center">Explicación de los fundamentos del Lenguaje de marcado de hipertexto </h2>
     <p> El <strong>lenguaje de marcado de hipertexto (HTML)</strong>  es un lenguaje informático que forma parte de la mayoría de las páginas web y aplicaciones en línea. Un hipertexto es un texto que se utiliza para enlazar con otros textos, mientras que un lenguaje de marcado es una serie de marcas que indican a los servidores web la estructura y el estilo de un documento. </p>
     <div>
         <nav>
@@ -68,6 +68,69 @@
                     <section>
                         <h3> ¿Algo que nos quieras comentar?</h3>
                         <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+                        <div class="content">
+                            <div class="contact-form">
+                                <h3>Inscribete <span> Ahora</span></h3>
+                                <form action="">
+                                  <fieldset>
+                                    <legend>Datos personales</legend>
+                                    <p>
+                                      <label for="apellidos">Apellidos</label>
+                                      <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tú Apellido" />
+                                    </p>
+                                    <p>
+                                      <label for="nombre">Nombres</label>
+                                      <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+                                    </p>
+                                    <p>
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" id="email" placeholder="example@gmail.com" />
+                                      </p>
+                                    <p>
+                                      <label for="edad">Edad</label>
+                                      <input type="number" max="200" min="18" name="edad" id="edad" />
+                                    </p>
+                                    <p>
+                                      <label for="curso">Curso a inscribirse</label>
+                                      <select name="curso" id="curso">
+                                        <optgroup label="Diseño Front END">
+                                          <option value="HTML">HTML</option>
+                                          <option value="CSS">CSS</option>
+                                          <option value="Diseño UX">Diseño UX</option>
+                                        </optgroup>
+                                        <optgroup label="Back END">
+                                          <option value="JavaScript">JavaScript</option>
+                                          <option value="PHP">PHP</option>
+                                          <option value="PYTHON">PYTHON</option>
+                                        </optgroup>
+                                        <optgroup label="Base de Datos">
+                                            <option value="MongoDB">MongoDB</option>
+                                            <option value="SQL Server">SQL Server</option>
+                                            <option value="Mysql">Mysql</option>
+                                          </optgroup>
+                                      </select>
+                                    </p>
+                                    <p class="block">
+                                      <label for="direccion">Dirección</label>
+                                      <textarea name="direccion" id="direccion" rows="3" placeholder="Dejanos tú Dirección.."></textarea>
+                                    </p>
+                                    <p>
+                                        <label for="seccions">Seccion</label>
+                                        <input list="seccions" name="seccion" id="seccion" />
+                                        <datalist id="seccions">
+                                          <option value="Vespertina"></option>
+                                          <option value="Matutina"></option>
+                                          <option value="Diurna"></option>
+                                        </datalist>
+                                      </p>
+                                  </fieldset>
+                                  <br />
+                                  <p class="button">
+                                    <button type="submit">Enviar</button>
+                                  </p>
+                                </form>
+                              </div>
+                        </div>
                     </section>
                     
                     <aside>
