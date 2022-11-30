@@ -303,6 +303,11 @@
                                 Cuando la función de autocompletar está activada, el navegador completa automáticamente
                                 los valores en función de los
                                 valores que el usuario ha ingresado anteriormente.</p>
+                            <ul>
+                                <li><b>on</b>: el navegador debería sugerir opciones automáticamente. Este es el valor
+                                    por defecto.</li>
+                                <li><b>off</b>: el navegador no debería sugerir opciones automáticamente.</li>
+                            </ul>
                             <table border="1">
                                 <thead>
                                     <tr>
@@ -334,8 +339,19 @@
                                     </tr>
                                     <tr>
                                         <td>
+                                            <h3>autocomplete="off"</h3>
                                             <form action="https://www.htmlquick.com/es/form-result.php" method="post"
                                                 target="_blank" autocomplete="off">
+                                                <p>Texto: <input type="text" name="Texto"> <input type="submit"
+                                                        value="Enviar datos"></p>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3>autocomplete="on"</h3>
+                                            <form action="https://www.htmlquick.com/es/form-result.php" method="post"
+                                                target="_blank" autocomplete="on">
                                                 <p>Texto: <input type="text" name="Texto"> <input type="submit"
                                                         value="Enviar datos"></p>
                                             </form>
@@ -349,6 +365,15 @@
                             <p>El atributo enctype especifica cómo se deben codificar los datos del formulario al
                                 enviarlos al servidor.
                                 El atributo enctype solo se puede usar si method="post".</p>
+                            <ul>
+                                <li><b>application/x-www-form-urlencoded</b>: los espacios son reemplazados con signos
+                                    más ("+") y los caracteres
+                                    especiales son convertidos a valores <i>HEX</i>. Este es el valor por defecto.</li>
+                                <li><b>multipart/form-data</b>: no se aplica ninguna codificación. Este valor es
+                                    necesario para la subida de
+                                    archivos.</li>
+                                <li><b>text/plain</b>: solo los espacios son reemplazados por signos más ("+").</li>
+                            </ul>
                             <table border="1">
                                 <thead>
                                     <tr>
@@ -378,8 +403,19 @@
                                     </tr>
                                     <tr>
                                         <td>
+                                            <h3>enctype="multipart/form-data"</h3>
                                             <form action="https://www.htmlquick.com/es/form-result.php" method="post"
                                                 enctype="multipart/form-data" target="_blank">
+                                                <p><label>Archivo: <input type="file" name="archivo"></label> <input
+                                                        type="submit" value="Enviar datos"></p>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3>enctype="text/plain"</h3>
+                                            <form action="https://www.htmlquick.com/es/form-result.php" method="post"
+                                                enctype="text/plain" target="_blank">
                                                 <p><label>Archivo: <input type="file" name="archivo"></label> <input
                                                         type="submit" value="Enviar datos"></p>
                                             </form>
@@ -393,6 +429,28 @@
                             <p>El atributo de method especifica cómo enviar datos de formulario (los datos de formulario
                                 se envían a la página
                                 especificada en el atributo de acción).</p>
+                            <ul>
+                                <li><b>get</b>: los datos se adjuntan al URL de la petición (el
+                                    provisto en el atributo action).
+                                    <br />
+                                    Los pares nombre-valor se organizan de la forma "nombre=valor" y se
+                                    separan unos de otros con un signo "&amp;".
+                                    <br />
+                                    Toda esta cadena es sumada al URL de la petición, precedida por un signo de
+                                    interrogación ("?").
+                                    <br />
+                                    Por ejemplo, una cadena GET podría ser:
+                                    "resultados.php?usuario=john&amp;pass=123456"
+                                </li>
+                                <li><b>post</b>: los datos se adjuntan al cuerpo de la petición.</li>
+                                <li><b>dialog</b>: específico para formularios dentro de un elemento dialog. Instruye al
+                                    navegador a cerrar el cuadro de diálogo cuando el
+                                    formulario es enviado.
+                                    <br />
+                                    Los resultados del formulario deberían ser manipulados por
+                                    programas.
+                                </li>
+                            </ul>
                             <table border="1">
                                 <thead>
                                     <tr>
@@ -426,7 +484,8 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <form action="../../form-result.php" method="get" target="_blank">
+                                            <form action="https://www.htmlquick.com/es/form-result.php" method="get"
+                                                target="_blank">
                                                 <p>Nombre de usuario: <input type="text" name="usuario"></p>
                                                 <p>Contraseña: <input type="password" name="pass"></p>
                                                 <p><input type="submit" value="Enviar datos"></p>
@@ -501,6 +560,13 @@
                                 El atributo target define un nombre o palabra clave para un contexto de navegación (por
                                 ejemplo, pestaña, ventana o
                                 marco en línea).</p>
+                            <ul>
+                                <li><b>_blank</b>: en una nueva ventana/pestaña.</li>
+                                <li><b>_parent</b>: en el contexto padre inmediato.</li>
+                                <li><b>_self</b>: en el mismo contexto que contiene al formulario.</li>
+                                <li><b>_top</b>: en el más alto contexto de naveción (el contexto más exterior que
+                                    contiene al formulario).</li>
+                            </ul>
                             <table border="1">
                                 <thead>
                                     <tr>
@@ -868,7 +934,7 @@
                         <div class="content">
                             <div class="contact-form">
                                 <h3>Inscribete <span> Ahora</span></h3>
-                                <form action="">
+                                <form method="POST" action="data.php">
                                     <fieldset>
                                         <legend>Datos personales</legend>
                                         <p>
