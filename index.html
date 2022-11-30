@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <font face="Arial">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
         src="https://www.hostinger.es/tutoriales/wp-content/uploads/sites/7/2018/11/what-is-html.webp" />
     <h1 style="color:#2F1C6A;" align="center"> ¿Qué es HTML? </h1>
     <img height="30%" width="15%" align="left" src="http://assets.stickpng.com/thumbs/5847f5bdcef1014c0b5e489c.png" />
+    <link rel="icon" type="image/x-icon" href="http://www.utmachala.edu.ec/portalwp/wp-content/uploads/2015/08/LOGO_OUT.png">
 </head>
 
 <body style="background-color:#E9ECF4;">
@@ -26,6 +28,9 @@
                     <h2 style="color:#2F1C6A;">Tabla de contenido </h2>
                     <ul>
                         <li>
+                            <a href="#etiquetas"> Etiquetas Basicas</a>
+                        </li>
+                        <li>
                             <a href="#linea"> Elementos en linea</a>
                         </li>
                         <li>
@@ -34,6 +39,20 @@
                         <li>
                             <a href="#metodosHTTP"> Métodos de solicitud HTTP</a>
                         </li>
+                        <li>
+                            <a href="#valid"> Validaciones de Forms</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#espe"> Especificaciones</a>
+                        </li>
+                        <li>
+                            <a href="#control"> Control de Etiquetas From</a>
+                        </li>
+                        <li>
+                            <a href="#respuesta"> Deja una respuesta</a>
+                        </li>
+                        
                     </ul>
                 </section>
             </aside>
@@ -41,6 +60,41 @@
         <div>
             <main>
                 <article>
+                    <h1 style="color:#2F1C6A" id="etiquetas"> <strong> Etiquetas basicas HTML</strong> </h1>
+                    <h3 style="color:#2F1C6A"> <strong> Etiquetas Semanticas </strong> </h3>
+                    <div style="display: flex;justify-content:center;"> 
+                        <table  border="1" cellpadding="5" cellspacing="0" width="50%">
+                            <thead style="padding: 8px;background: linear-gradient(#f26626 50%,#e54e21 0);color: white;">
+                                <tr>
+                                    <th style="border: 1px #000000 solid">Tag</th>
+                                    <th style="border: 1px #000000 solid">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="border: 1px #000000 solid"> div 1x1</td>
+                                    <td style="border: 1px #000000 solid">Defines a section in a document 2x1 </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px #000000 solid">Cell 1x2</td>
+                                    <td style="border: 1px #000000 solid">Cell 2x2</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px #000000 solid">Cell 1x3</td>
+                                    <td style="border: 1px #000000 solid">Cell 2x3</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px #000000 solid">Cell 1x4</td>
+                                    <td style="border: 1px #000000 solid">Cell 2x4</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px #000000 solid">Cell 1x5</td>
+                                    <td style="border: 1px #000000 solid">Cell 2x5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                    </div>
                     <h1 style="color:#2F1C6A"> <strong> Elementos en línea vs bloque </strong> </h1>
                     <section>
                         <h2 style="color:#2F1C6A" id="linea">
@@ -52,6 +106,11 @@
                                 una sección separada. Puede agregar espacio a la izquierda o a la derecha de un elemento
                                 en línea, pero no puede agregar espacio en la parte superior e inferior del elemento.
                             </p>
+                            <p>Por ejemplo, una etiqueta <strong>&lt;strong&gt;</strong> muestra un elemento en negrita, mientras que la etiqueta <strong>&lt;em&gt;</strong> lo muestra en cursiva. Los hipervínculos también son elementos en línea que utilizan una etiqueta <strong>&lt;a&gt;</strong> y un atributo <strong>href</strong> para indicar el destino del enlace:</p>
+                            <div style="display:flex;justify-content:center;">
+                                <img src="./images/code2.jpeg" alt="">
+                            </div>
+                            
                         </div>
                         <h2 style="color:#2F1C6A" id="bloque">
                             Elementos en bloque
@@ -61,36 +120,56 @@
                                 Comienzan en una nueva línea y ocupan todo el ancho de la página web para el contenido.
                                 Puede agregar márgenes superior e inferior a estos elementos y también crean una
                                 estructura más grande que los elementos en línea.</p>
+                            <p>Todas las páginas HTML utilizan estas tres etiquetas:
+                            </p>
+                            <ol>
+                                <li>La etiqueta <strong> &lt;HTML&gt;
+                                </strong> es el elemento raíz que define todo el documento HTML.</li>
+                                <li>La etiqueta <strong>&lt;body&gt;</strong> contiene información meta como el título y el conjunto de caracteres de la página.La etiqueta <body> encierra todo el contenido que aparece en la página.</li>
+                                <li>La etiqueta <strong>&lt;body&gt;</strong> encierra todo el contenido que aparece en la página.</li>
+                            </ol>
+                            <div style="display:flex;justify-content:center;">
+                                <img src="./images/code1.jpeg" alt="code1">
+                            </div>
+                            
                         </div>
                     </section>
                     <section>
-                        <h2 style="color:#2F1C6A">
+                        <h2 style="color:#2F1C6A" id="espe">
                             Especificaciones
                         </h2>
-                        <table border="1" cellpadding="0" cellspacing="0" width="50%">
-                            <thead>
-                                <th>Espeficication</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <a
-                                            href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element">HTML
-                                            Standard
-                                            <!-- --> <br><small>#
-                                                <!-- -->the-main-element
-                                            </small>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div style="display: flex;justify-content:center;">
+                            <table border="1" cellpadding="5" cellspacing="0" width="50%">
+                                <thead style="padding: 8px;background: linear-gradient(#f26626 50%,#e54e21 0);color: white;">
+                                    <th>Espeficication</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a
+                                                href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element">HTML
+                                                Standard
+                                                <!-- --> <br><small>#
+                                                    <!-- -->the-main-element
+                                                </small>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 style="color:#2F1C6A" id="control">Control de Etiquetas from</h2>
+                        <div>
+                            <a href="tags.html">Controles de etiqueta</a>
+                        </div>
                     </section>
                     <br><br>
                     <hr>
                     <br>
                     <section>
-                        <h2 style="color:#2F1C6A">Validación de Formularios</h2>
+                        <h2 style="color:#2F1C6A" id="valid">Validación de Formularios</h2>
                         <div>
                             <p>Al crear un formulario en HTML, debemos ser conscientes de un detalle ineludible: los
                                 usuarios se equivocan al rellenar un formulario y para intentar que los datos lleguen
@@ -119,7 +198,7 @@
                             <h3 style="color:#2F1C6A">Validación con JavaScript</h3>
                             <p>Se la realiza codificando en el mismo lenguaje y es completamente personalizable.</p>
                             <div style="display: flex;justify-content: center;">
-                                <img style="width: 900px;" src="./images/validaciones-html5.png" alt="">
+                                <img style="width: 900px; border-radius: 0.5rem;" src="./images/validaciones-html5.png" alt="">
                             </div>
                             <h2 style="color:#2F1C6A">Atributos Básicos</h2>
                             <p>Con estos atributos, podemos crear validaciones básicas en nuestros campos de entrada de datos</p>
@@ -407,6 +486,7 @@
                         </div>
                     </section>
                     <section>
+                        <h1 style="color:#2F1C6A" id="respuesta"> <strong> Deja una respuesta</strong> </h1>
                         <h3> ¿Algo que nos quieras comentar?</h3>
                         <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
                         <div class="content">
@@ -505,6 +585,6 @@
     </div>
 </body>
 <footer>
-    Hola 
+    © 2022-2023 Experience.ec - Cursos de Programacion - Frontend & Backend.
 </footer>
 </html>
